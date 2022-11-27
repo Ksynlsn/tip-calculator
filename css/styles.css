@@ -1,0 +1,63 @@
+/*UNIVERSIAL STYLES*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#wrapper {
+    margin: 4% auto;
+    width: 90%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Mali', cursive;
+}
+
+hr {
+    margin: 1em auto 0;
+}
+
+/* Form Styles */
+form {
+    width: 65%;
+    margin: 2em auto;
+    padding: 1em;
+    border: 1px solid #1c1a14;
+    background-color: #f8fafd; 
+}
+
+label {
+    display: block;
+    margin: 0.25em 0;
+}
+
+input[type=submit] {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 1em auto 0;
+    padding: 0.33em;
+    border-radius: 5px;
+    border-width: thin;
+    font-weight: 600;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+input[type=text] {
+    padding-left: .25em;
+    
+}
+
+.form-tip-result {
+    width: 65%;
+    margin: 2em auto;
+    padding: 1em;
+    border: 1px solid #1c1a14;
+    background-color: #f8fafd; 
+}
