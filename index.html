@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 7</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&family=Mali:wght@300&family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="wrapper">
+        <h1>Realfine Tip Calculator</h1>
+      <form method="post" action="" id="form" >
+        <div class="form-tip-input">
+        <label for="CCtips">Enter Total CC Tips:</label>
+            <input type="text" id="CCtips" name="CCtips">
+
+            <label for="cashTips">Enter Total Cash Tips:</label>
+            <input type="text" id="cashTips" name="cashTips">
+
+        <label for="shift-1">Hours Worked Person 1:</label>
+            <input type="number" id="shift-1" name="shift-1" min=".25" max="10" step=".25" value="6.5">
+
+        <label for="shift-2">Hours Worked Person 2:</label>
+            <input type="number" id="shift-2" name="shift-2" min=".25" max="10" step=".25" value="8">
+
+        <label for="shift-3">Hours Worked Person 3:</label>
+            <input type="number" id="shift-3" name="shift-3" min=".25" max="10" step=".25" value="5.5">
+          </div><!-- close form-tip-input -->
+
+            <hr>
+
+            <label for="cashSales">Enter Cash Sales:</label>
+            <input type="text" id="cashSales" name="cashSales">
+
+            <span id="dueBack"></span>
+        
+                    <input type="submit" id="submit" value="Calculate Tips" onclick="validateInput()">   
+                    
+                    <input type="button" id="clear" value="reset" onclick="resetForm()">
+      </form>
+
+      <div class="form-tip-result">
+        <span id="shift-1-ccTips">Person 1 CC Tips:</span> 
+        <span id="shift-1-cash-tips">Person 1 Cash Tips:</span>
+
+     </div><!-- close form-tip-result -->
+
+    </div>
+    <script src="js/review.js"></script>
+  </body>
+</html>
