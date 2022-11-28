@@ -12,6 +12,7 @@ let shift1 = document.getElementById('shift-1');
 let shift2 = document.getElementById('shift-2');
 let shift3 = document.getElementById('shift-3');
 
+// Submit - Reset - myForm
 let submit = document.getElementById('submit');
 let reset = document.getElementById('clear');
 let myForm = document.getElementById('form');
@@ -32,8 +33,8 @@ function validateInput() {
 
     multiplyer2 = totalCashTips / totalHours;  
     
-// CC Tips 
 
+// CC Tips 
     shift1CCTipsTotal = shift1Hrs * multiplyer1;
     shift1CCTips = parseFloat(shift1CCTipsTotal.toFixed(2)); 
 
@@ -66,9 +67,22 @@ function validateInput() {
   
 }
 
+function showData() {
+    alert(` Total Hours Worked: ${totalHours}
+    \nTotal CC tips are: ${totalCCTips}  |  Total cash tips are: ${totalCashTips}
+    \nCC Tip Multiplyer is: ${multiplyer1}
+    \nCash Tip Multiplyer is: ${multiplyer2}
+    \nPerson 1 CC Tips: ${shift1CCTips}  |  Person 1 Cash tips: ${shift1CashTips}
+    \nPerson 2 CC Tips: ${shift2CCTips}  |  Person 2 Cash tips: ${shift2CashTips}
+    \nPerson 3 CC Tips: ${shift3CCTips}  |  Person 3 Cash tips: ${shift3CashTips}
+    \ndifference (if applicable) rounded to nearest cent: ${myDifference} (this value has been added to Person 1 CC Tips)
+   
+    `);
+}
 
 function testData() {
-    alert(` Total cc tips are: ${totalCCTips}
+    alert(` Total CC tips are: ${totalCCTips}
+    \nTotal cash tips are: ${totalCashTips}
     \nTotal hours worked today are: ${totalHours}
     \nCC Tip Multiplyer is: ${multiplyer1}
     \nCash Tip Multiplyer is: ${multiplyer2}
@@ -87,7 +101,7 @@ function resetForm(){
 
 window.onload = function() {
 
-    submit.addEventListener('click', testData, false);
+    submit.addEventListener('click', showData, false);
 
 }
 
