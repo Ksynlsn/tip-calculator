@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
     myForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
+        if (!CCtips.value || parseFloat(CCtips.value) <= 0) {
+    resultsDiv.innerHTML = "<p>Please enter CC tips.</p>";
+    return;}
+
         let s1 = shift1.valueAsNumber || 0;
         let s2 = shift2.valueAsNumber || 0;
         let s3 = shift3.valueAsNumber || 0;
