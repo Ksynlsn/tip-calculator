@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
 
         if (!CCtips.value || parseFloat(CCtips.value) <= 0) {
-    resultsDiv.innerHTML = "<p>Please enter CC tips.</p>";
+    resultsDiv.innerHTML = "<p class="alert">Please enter CC tips.</p>";
     return;}
 
         let s1 = shift1.valueAsNumber || 0;
