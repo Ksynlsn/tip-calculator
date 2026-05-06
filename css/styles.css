@@ -60,7 +60,7 @@ input[type=text] {
     
 }
 
-alert {
+#alert, .alert {
     color: rgb(235, 58, 93);
     font-size: .85em;
     font-style: italic;
